@@ -1,14 +1,12 @@
 package Class_Get_Set_Met;
-import java.util.Calendar;
-public class Cadastro_de_Produtos {
+public abstract class Produtos {
     private String nomep, fornecedor;
     private int total_mercadoria;
     private float valor;
-    Calendar c = Calendar.getInstance();
-    public Cadastro_de_Produtos() {
+    public Produtos() {
     }
 
-    public Cadastro_de_Produtos(String nomep, String fornecedor, int total_mercadoria, float valor) {
+    public Produtos(String nomep, String fornecedor, int total_mercadoria, float valor) {
         this.nomep = nomep;
         this.fornecedor = fornecedor;
         this.total_mercadoria = total_mercadoria;
@@ -45,18 +43,6 @@ public class Cadastro_de_Produtos {
 
     public void setValor(float valor) {
         this.valor = valor;
-    }
-
-    public Calendar getC() {
-        return c;
-    }
-
-    public void setC(Calendar c) {
-        this.c = c;
-    }
-    
-    private Calendar chamaCalendar(){
-        return c;
     }
 
     @Override

@@ -1,12 +1,12 @@
 package Class_Get_Set_Met;
 public class Informacoes_de_Cliente {
-   private String nome, sobrenome;
-    private int idade, cpf;
+   private String nome, sobrenome, cpf;
+    private int idade;
 
     public Informacoes_de_Cliente() {
     }
 
-    public Informacoes_de_Cliente(String nome, String sobrenome, int idade, int cpf) {
+    public Informacoes_de_Cliente(String nome, String sobrenome, int idade, String cpf) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.idade = idade;
@@ -37,11 +37,11 @@ public class Informacoes_de_Cliente {
         this.idade = idade;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 

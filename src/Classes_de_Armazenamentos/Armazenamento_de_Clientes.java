@@ -6,5 +6,5 @@ public class Armazenamento_de_Clientes {
     @Override
     public String toString() {
         return n.toString();
-    }        
+    }
 }
