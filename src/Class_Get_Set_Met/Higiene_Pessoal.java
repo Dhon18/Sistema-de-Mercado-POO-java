@@ -6,6 +6,7 @@ public class Higiene_Pessoal extends Produtos{
     }
 
     public Higiene_Pessoal(String categoria, String nomep, String fornecedor, int total_mercadoria, float valor) {
+        //Esta sendo usada para acessar os objetos na classe Mãe que é Produtos
         super(nomep, fornecedor, total_mercadoria, valor);
         this.categoria = categoria;
     }
@@ -23,5 +24,8 @@ public class Higiene_Pessoal extends Produtos{
         return super.toString()+"Higiene_Pessoal{" + "categoria=" + categoria +"\n"+'}';
     }
     
-    
+    @Override
+    public double desconto(Produtos p) {
+        return p.getValor() * 0.02;
+    }
 }

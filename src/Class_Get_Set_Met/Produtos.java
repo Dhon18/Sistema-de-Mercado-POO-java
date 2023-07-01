@@ -3,6 +3,7 @@ public abstract class Produtos {
     private String nomep, fornecedor;
     private int total_mercadoria;
     private float valor;
+   
     public Produtos() {
     }
 
@@ -44,7 +45,10 @@ public abstract class Produtos {
     public void setValor(float valor) {
         this.valor = valor;
     }
-
+    
+    public abstract double desconto(Produtos p);
+    
+    
     @Override
     public String toString() {
         return "Cadastro_de_Produtos{" + "nomep=" + nomep + ", fornecedor=" + fornecedor + ", total_mercadoria=" + total_mercadoria + ", valor=" + valor + "\n" +'}';
